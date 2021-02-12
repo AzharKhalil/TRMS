@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 4 admin, bootstrap 4, css3 dashboard, bootstrap 4 dashboard, AdminWrap lite admin bootstrap 4 dashboard, frontend, responsive bootstrap 4 admin template, Nice admin lite design, Nice admin lite dashboard bootstrap 4 dashboard template">
+    <meta name="description"
+        content="Nice Admin Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
+    <meta name="robots" content="noindex,nofollow">
+    <title>TRMS</title>
+    <link rel="canonical" href="https://www.wrappixel.com/templates/niceadmin-lite/" />
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
+    <!-- Custom CSS -->
+    <link href="../../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../../dist/css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+
+
+<style>
+
+
+.btn-primary {
+        font-family: Raleway-Bold;
+        font-size: 16px;
+        color: #fff;
+        line-height: 1.2;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 150px;
+        height: 55px;
+        background-color: #333333;
+        border-radius: 27px;
+        transition: all 0.4s;
+    }
+
+    .new{
+        filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+    }
+</style>
+    
+</head>
+
+<body>
+
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-navbarbg="skin6" data-theme="light" data-layout="vertical" data-sidebartype="full"
+        data-boxed-layout="full">
+        
+        <aside class="left-sidebar" data-sidebarbg="skin5">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="sidebar-item">
+                            <a id="dashboardlink" class="sidebar-link waves-effect waves-dark sidebar-link" href="Dashboard.html"
+                                aria-expanded="false">
+                                <i class="mdi mdi-av-timer"></i>
+                                <span class="hide-menu">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a id="reimblink" class="sidebar-link waves-effect waves-dark sidebar-link" href="reimbursmentStatus.html"
+                                aria-expanded="false">
+                                <i class="mdi mdi-account-network"></i>
+                                <span class="hide-menu">Reimbursment Status</span>
+                            </a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="page-breadcrumb">
+                <div class="row">
+                    <div class="col-5 align-self-center">
+                        <h4 class="page-title">Reimbursment Status</h4>
+                    </div>
+                    <div class="col-7 align-self-center">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">Reimbursment Status</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="font-family:Raleway-Medium;">
+
+    
+              
+            
+    
+    
+    
+    
+    
+                <div class="row" style="padding-top:5%">
+                    <div class="col-md-4 new" style="padding-left:5% ;">
+                        <!--Card-->
+                        <div class="card">
+    
+    
+    
+                            <!--Card content-->
+                            <div class="card-body" style="text-align: center;">
+                                <!--Title-->
+                                <h2 id="pendingreimb"style ="color: blue;" class="card-title">$1000</h2>
+    
+                                <h2 class="card-title">Total</h2>
+                                <!--Text-->
+                                <p class="card-text">Total Reimbursment for this year</p>
+    
+                            </div>
+                        </div>
+                        <!--/.Card-->
+                    </div>
+                    <div class="col-md-4 new" style="padding-left:2.5% ;padding-right: 2.5%;">
+                        <!--Card-->
+                        <div class="card">
+    
+    
+    
+                            <!--Card content-->
+                            <div class="card-body" style="text-align: center;">
+                                <!--Title-->
+                                <h2 id = "usedreimb" class="card-title" style="color: red;">$0</h2>
+    
+                                <h2 class="card-title">Used</h2>
+                                <!--Text-->
+                                <p class="card-text">Reimbursment that have been Used</p>
+    
+                            </div>
+                        </div>
+                        <!--/.Card-->
+                    </div>
+                    <div class="col-md-4 new" style="padding-right:5%;">
+                        <!--Card-->
+                        <div class="card">
+    
+    
+    
+                            <!--Card content-->
+                            <div class="card-body" style="text-align: center;">
+                                <!--Title-->
+                                <h2 id ="reimbavailable" class="card-title" style="color: green;">$0</h2>
+    
+                                <h2 class="card-title">Available</h2>
+                                <!--Text-->
+                                <p class="card-text">Available Reimbursment for you this year</p>
+    
+                            </div>
+                        </div>
+                        <!--/.Card-->
+                    </div>
+    
+                </div>
+                <div style="padding: 5%; padding-left: 43%;">
+                    <button onclick="apply()" class="btn btn-primary">Apply</button>
+
+                   
+                </div>
+
+                
+                
+    
+    
+    
+            </div>            
+          
+        </div>
+        
+
+
+
+
+    </div>
+ 
+    <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../../assets/libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="../../assets/extra-libs/sparkline/sparkline.js"></script>
+    <!--Wave Effects -->
+    <script src="../../dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../../dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../../dist/js/custom.min.js"></script>
+    <!--This page JavaScript -->
+    <!--chartis chart-->
+    <script src="../../assets/libs/chartist/dist/chartist.min.js"></script>
+    <script src="../../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../../dist/js/pages/dashboards/dashboard1.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./reimbursmentSatus.js"></script>
+   
+</body>
+
+</html>

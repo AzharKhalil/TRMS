@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 4 admin, bootstrap 4, css3 dashboard, bootstrap 4 dashboard, AdminWrap lite admin bootstrap 4 dashboard, frontend, responsive bootstrap 4 admin template, Nice admin lite design, Nice admin lite dashboard bootstrap 4 dashboard template">
+        <meta name="description"
+        content="Nice Admin Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
+        <meta name="robots" content="noindex,nofollow">
+    <title>TRMS Dashboard</title>
+    <link rel="canonical" href="https://www.wrappixel.com/templates/niceadmin-lite/" />
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
+    <!-- Custom CSS -->
+    <link href="../../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../../dist/css/style.min.css" rel="stylesheet">
+
+   <style>
+   
+.login100-form-btn{
+    font-family: Raleway-Bold;
+font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 150px;
+    height: 55px;
+    background-color: #333333;
+    border-radius: 27px;
+transition: all 0.4s;
+
+}
+   </style>
+    
+</head>
+
+<body>
+
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+  
+    <div id="main-wrapper" data-navbarbg="skin6" data-theme="light" data-layout="vertical" data-sidebartype="full"
+        data-boxed-layout="full">
+        
+        <aside class="left-sidebar" data-sidebarbg="skin5">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="sidebar-item">
+                            <a id = "dashboardlink" class="sidebar-link waves-effect waves-dark sidebar-link" href="Dashboard.html"
+                                aria-expanded="false">
+                                <i class="mdi mdi-av-timer"></i>
+                                <span class="hide-menu">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a id = "reimblink" class="sidebar-link waves-effect waves-dark sidebar-link" href="./reimbursmentStatus.html"
+                                aria-expanded="false">
+                                <i class="mdi mdi-account-network"></i>
+                                <span class="hide-menu">Reimbursment Status</span>
+                            </a>
+                        </li>
+                        
+                       
+                       
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+    
+     
+        <div class="page-wrapper">
+      
+            <div class="page-breadcrumb">
+                <div class="row">
+                    <div class="col-5 align-self-center">
+                        <h4 class="page-title">Dashboard</h4>
+                    </div>
+                    <div class="col-7 align-self-center">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                                </ol>
+                            </nav>
+                        </div>
+
+                    </div>
+                    <!--Started new code-->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    
+                                    <h6 class="card-subtitle">Using the most recent information to display in table here’s how
+                                        User can view <b>Reimbursent</b> status and apply for it.
+                                        meaning any nested tables will be styled in the same manner as the
+                                        parent.</h6>
+                                    <h6 class="card-title m-t-40"><i
+                                            class="m-r-5 font-18 mdi mdi-numeric-1-box-multiple-outline"></i> User Information
+                                        </h6>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                           
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">First Name</th>
+                                                    <td id="firstname"></td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Last Name</th>
+                                                    <td id="lastname"></td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">User Name</th>
+                                                    <td id="username"></td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Email</th>
+                                                    <td id="email"></td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Department</th>
+                                                    <td id="department"></td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Role</th>
+                                                    <td id="role"></td>
+                                                    
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                  
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!--starting new-->
+
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Request Status</h4>
+                                    
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Request ID</th>
+                                                <th scope="col" >Request Type</th>
+                                                <th scope="col" >Status</th>
+                                                <th scope="col">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="reqtable">
+                                        
+                                       <div style="text-align: center;" id="notreq"> No Request</div>
+                                       </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--ending new-->
+                        <!--starting new-->
+
+                        <div class="col-12" style="visibility:hidden;" id="notification">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Notifications</h4>
+                                    
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col" style="border-right: 0ch ;">Request Type</th>
+                                                <th scope="col" style="border-left: 0ch;"></th>
+                                                <th scope="col">Action</th>
+                                            </tr>
+                                        </thead>
+                                        
+                                        <tbody id="notifications">
+                                            <div style="text-align: center;" id="nonot">No new Notifications</div>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                               
+                            </div>
+                          
+                            
+                        </div>
+                        
+                     
+
+                        <!--ending new-->
+                      
+                      <!-- request tables ending -->
+                                </div>
+                                <!--Button-->
+                        <button class="login100-form-btn" data-toggle="modal" data-target=".bs-example-modal-sm" style="align-content: center;">Logout</button>
+
+                        <div class="modal bs-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                              <div class="modal-header"><h4>Logout <i class="fa fa-lock"></i></h4></div>
+                              <div class="modal-body"><i class="fa fa-question-circle"></i> Are you sure you want to log-off?</div>
+                              <div class="modal-footer" onclick="logout()"><a href="javascript:;" class="btn btn-primary btn-block">Logout</a></div>
+                            </div>
+                          </div>
+                        </div>
+                                
+                            </div>
+                        </div>
+                        
+                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End New Code-->
+
+
+
+
+
+
+                </div>
+            </div>
+          
+        </div>
+
+    </div>
+ 
+    <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../../assets/libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <script src="../../assets/extra-libs/sparkline/sparkline.js"></script>
+    
+    <script src="../../dist/js/waves.js"></script>
+   
+    <script src="../../dist/js/sidebarmenu.js"></script>
+    
+    <script src="../../dist/js/custom.min.js"></script>
+    
+    <script src="../../assets/libs/chartist/dist/chartist.min.js"></script>
+    <script src="../../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../../dist/js/pages/dashboards/dashboard1.js"></script>
+    
+    <script src="./dashboard.js"></script>
+
+
+
+</body>
+
+</html>
