@@ -1,9 +1,9 @@
-Tuition Reimbursmnet Management System 
+                                                                  Tuition Reimbursmnet Management System 
 
-Project Description
+Project Description:
 The Tuition Reimbursement System, TRMS, allows users to submit reimbursements for courses and training. The submitted reimbursement must be approved by that employee's supervisor, department head, and benefits coordinator. The benefits coordinator then reviews the grade received before finalizing the reimbursement.
 
-Technologies Used
+Technologies Used:
 Core Java
 Servlets
 HTML
@@ -13,7 +13,7 @@ Javascript
 JDBC
 SQL
 
-Features
+Features:
 Separate login for employee, Superisor, HOD, Benefits Coordinator
 Each user can view reimbursment status and submit new application for reimbursment.
 User can upload supporting docments regarding reimbursment application 
